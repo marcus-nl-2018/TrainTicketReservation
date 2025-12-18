@@ -15,9 +15,7 @@ import com.shashi.utility.TrainUtil;
 
 @WebServlet("/payment")
 public class BookTrainPayment extends HttpServlet {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {

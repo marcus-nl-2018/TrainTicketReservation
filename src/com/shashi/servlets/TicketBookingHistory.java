@@ -18,7 +18,6 @@ import com.shashi.service.BookingService;
 import com.shashi.service.impl.BookingServiceImpl;
 import com.shashi.utility.TrainUtil;
 
-@SuppressWarnings("serial")
 @WebServlet("/bookingdetails")
 public class TicketBookingHistory extends HttpServlet {
 

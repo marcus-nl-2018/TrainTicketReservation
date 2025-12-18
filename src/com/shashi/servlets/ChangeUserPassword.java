@@ -13,9 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.shashi.constant.UserRole;
 import com.shashi.utility.TrainUtil;
 
-//import com.shashi.beans.UserBean;
-
-@SuppressWarnings("serial")
 @WebServlet("/changeuserpassword")
 public class ChangeUserPassword extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {

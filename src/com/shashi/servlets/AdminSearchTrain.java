@@ -20,7 +20,7 @@ import com.shashi.utility.TrainUtil;
 @WebServlet("/adminsearchtrain")
 public class AdminSearchTrain extends HttpServlet {
 
-	private TrainService trainService = new TrainServiceImpl();
+	private final TrainService trainService = new TrainServiceImpl();
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		res.setContentType("text/html");

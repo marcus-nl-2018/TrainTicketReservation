@@ -21,7 +21,7 @@ import com.shashi.utility.TrainUtil;
 public class AdminCancleTrain extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
-	private TrainService trainService = new TrainServiceImpl();
+	private final TrainService trainService = new TrainServiceImpl();
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		res.setContentType("text/html");

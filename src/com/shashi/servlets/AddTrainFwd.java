@@ -15,13 +15,6 @@ import com.shashi.utility.TrainUtil;
 @WebServlet("/addtrainfwd")
 public class AddTrainFwd extends HttpServlet {
 
-	/**
-	 * 
-	 * @param req
-	 * @param res
-	 * @throws IOException
-	 * @throws ServletException
-	 */
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		res.setContentType("text/html");
 		TrainUtil.validateUserAuthorization(req, UserRole.ADMIN);

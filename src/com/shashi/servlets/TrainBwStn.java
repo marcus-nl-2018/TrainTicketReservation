@@ -18,10 +18,9 @@ import com.shashi.service.TrainService;
 import com.shashi.service.impl.TrainServiceImpl;
 import com.shashi.utility.TrainUtil;
 
-@SuppressWarnings("serial")
 @WebServlet("/trainbwstn")
 public class TrainBwStn extends HttpServlet {
-	private TrainService trainService = new TrainServiceImpl();
+	private final TrainService trainService = new TrainServiceImpl();
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		res.setContentType("text/html");

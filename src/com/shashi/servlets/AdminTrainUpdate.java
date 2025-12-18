@@ -18,7 +18,7 @@ import com.shashi.service.impl.TrainServiceImpl;
 @WebServlet("/adminupdatetrain")
 public class AdminTrainUpdate extends HttpServlet {
 
-	private TrainService trainService = new TrainServiceImpl();
+	private final TrainService trainService = new TrainServiceImpl();
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		res.setContentType("text/html");

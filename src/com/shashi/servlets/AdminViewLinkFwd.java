@@ -17,19 +17,11 @@ import com.shashi.service.TrainService;
 import com.shashi.service.impl.TrainServiceImpl;
 import com.shashi.utility.TrainUtil;
 
-@SuppressWarnings("serial")
 @WebServlet("/viewadmin")
 public class AdminViewLinkFwd extends HttpServlet {
 
 	TrainService trainService = new TrainServiceImpl();
 
-	/**
-	 * 
-	 * @param req
-	 * @param res
-	 * @throws IOException
-	 * @throws ServletException
-	 */
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		res.setContentType("text/html");
 		PrintWriter pw = res.getWriter();

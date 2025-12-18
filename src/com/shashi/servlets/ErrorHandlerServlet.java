@@ -15,9 +15,6 @@ import com.shashi.constant.ResponseCode;
 
 public class ErrorHandlerServlet extends HttpServlet {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {

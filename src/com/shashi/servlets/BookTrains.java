@@ -24,12 +24,12 @@ import com.shashi.service.impl.BookingServiceImpl;
 import com.shashi.service.impl.TrainServiceImpl;
 import com.shashi.utility.TrainUtil;
 
-@SuppressWarnings("serial")
+
 @WebServlet("/booktrains")
 public class BookTrains extends HttpServlet {
 
-	private TrainService trainService = new TrainServiceImpl();
-	private BookingService bookingService = new BookingServiceImpl();
+	private final TrainService trainService = new TrainServiceImpl();
+	private final BookingService bookingService = new BookingServiceImpl();
 
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		PrintWriter pw = res.getWriter();

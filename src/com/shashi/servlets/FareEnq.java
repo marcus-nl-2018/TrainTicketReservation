@@ -18,7 +18,6 @@ import com.shashi.service.TrainService;
 import com.shashi.service.impl.TrainServiceImpl;
 import com.shashi.utility.TrainUtil;
 
-@SuppressWarnings("serial")
 @WebServlet("/fareenq")
 public class FareEnq extends HttpServlet {
 	TrainService trainService = new TrainServiceImpl();

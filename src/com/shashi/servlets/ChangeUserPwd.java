@@ -18,10 +18,9 @@ import com.shashi.service.UserService;
 import com.shashi.service.impl.UserServiceImpl;
 import com.shashi.utility.TrainUtil;
 
-@SuppressWarnings("serial")
 @WebServlet("/changeuserpwd")
 public class ChangeUserPwd extends HttpServlet {
-	private UserService userService = new UserServiceImpl(UserRole.CUSTOMER);
+	private final UserService userService = new UserServiceImpl(UserRole.CUSTOMER);
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		res.setContentType("text/html");
