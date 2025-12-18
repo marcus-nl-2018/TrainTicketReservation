@@ -21,20 +21,10 @@ import com.shashi.utility.TrainUtil;
 @WebServlet("/adminaddtrain")
 public class AdminAddTrain extends HttpServlet {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
-	private TrainService trainService = new TrainServiceImpl();
+	private final TrainService trainService = new TrainServiceImpl();
 
-	/**
-	 * 
-	 * @param req
-	 * @param res
-	 * @throws IOException
-	 * @throws ServletException
-	 */
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		res.setContentType("text/html");
 		PrintWriter pw = res.getWriter();

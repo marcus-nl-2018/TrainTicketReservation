@@ -3,9 +3,7 @@ package com.shashi.beans;
 import java.io.Serializable;
 
 public class BookingDetails implements Serializable {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	private String mailId;
 	private String tr_no;

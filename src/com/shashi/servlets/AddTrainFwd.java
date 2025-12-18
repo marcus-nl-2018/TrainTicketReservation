@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.shashi.constant.UserRole;
 import com.shashi.utility.TrainUtil;
 
-@SuppressWarnings("serial")
 @WebServlet("/addtrainfwd")
 public class AddTrainFwd extends HttpServlet {
 

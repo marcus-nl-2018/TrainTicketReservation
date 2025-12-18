@@ -15,19 +15,11 @@ import com.shashi.beans.TrainException;
 import com.shashi.service.TrainService;
 import com.shashi.service.impl.TrainServiceImpl;
 
-@SuppressWarnings("serial")
 @WebServlet("/adminupdatetrain")
 public class AdminTrainUpdate extends HttpServlet {
 
 	private TrainService trainService = new TrainServiceImpl();
 
-	/**
-	 * 
-	 * @param req
-	 * @param res
-	 * @throws IOException
-	 * @throws ServletException
-	 */
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		res.setContentType("text/html");
 		PrintWriter pw = res.getWriter();

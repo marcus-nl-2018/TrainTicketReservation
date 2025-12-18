@@ -12,17 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 import com.shashi.constant.UserRole;
 import com.shashi.utility.TrainUtil;
 
-@SuppressWarnings("serial")
 @WebServlet("/adminsearchtrainfwd")
 public class AdminSearchTrainFwd extends HttpServlet {
 
-	/**
-	 * 
-	 * @param req
-	 * @param res
-	 * @throws IOException
-	 * @throws ServletException
-	 */
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		res.setContentType("text/html");
 		TrainUtil.validateUserAuthorization(req, UserRole.ADMIN);

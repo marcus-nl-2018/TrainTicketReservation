@@ -6,9 +6,6 @@ import com.shashi.constant.ResponseCode;
 
 public class TrainException extends IOException {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	private String errorCode;

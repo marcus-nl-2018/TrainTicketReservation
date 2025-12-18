@@ -13,17 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 import com.shashi.constant.UserRole;
 import com.shashi.utility.TrainUtil;
 
-@SuppressWarnings("serial")
 @WebServlet("/adminlogout")
 public class AdminLogoutServlet extends HttpServlet {
 
-	/**
-	 * 
-	 * @param req
-	 * @param res
-	 * @throws ServletException
-	 * @throws IOException
-	 */
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		res.setContentType("text/html");
 		PrintWriter pw = res.getWriter();

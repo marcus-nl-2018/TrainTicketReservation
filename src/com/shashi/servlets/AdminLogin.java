@@ -14,17 +14,9 @@ import com.shashi.beans.TrainException;
 import com.shashi.constant.UserRole;
 import com.shashi.utility.TrainUtil;
 
-@SuppressWarnings("serial")
 @WebServlet("/adminlogin")
 public class AdminLogin extends HttpServlet {
 
-	/**
-	 * 
-	 * @param req
-	 * @param res
-	 * @throws IOException
-	 * @throws ServletException
-	 */
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		PrintWriter pw = res.getWriter();
 		res.setContentType("text/html");
