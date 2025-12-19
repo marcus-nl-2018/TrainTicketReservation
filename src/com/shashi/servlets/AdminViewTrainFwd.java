@@ -21,7 +21,7 @@ import com.shashi.utility.TrainUtil;
 @WebServlet("/adminviewtrainfwd")
 public class AdminViewTrainFwd extends HttpServlet {
 
-	private TrainService trainService = new TrainServiceImpl();
+	private final TrainService trainService = new TrainServiceImpl();
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		res.setContentType("text/html");

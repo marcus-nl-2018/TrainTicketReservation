@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.shashi.constant.UserRole;
 import com.shashi.utility.TrainUtil;
 
-@SuppressWarnings("serial")
 @WebServlet("/userhome")
 public class UserHome extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
@@ -29,7 +28,5 @@ public class UserHome extends HttpServlet {
 				+ " ! Good to See You here.<br/> Here you can Check up the train "
 				+ "details, train schedule, fare Enquiry and many more information.<br/>Just go to the Side Menu Links and "
 				+ "Explore the Advantages.<br/><br/>Thanks For Being Connected with us!" + "</div>");
-
 	}
-
 }

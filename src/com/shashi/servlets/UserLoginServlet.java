@@ -16,9 +16,7 @@ import com.shashi.utility.TrainUtil;
 
 @WebServlet("/userlogin")
 public class UserLoginServlet extends HttpServlet {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
@@ -37,15 +35,11 @@ public class UserLoginServlet extends HttpServlet {
 					+ " ! Good to See You here.<br/> Here you can Check up the train "
 					+ "details and train schedule,fare Enquiry and many more information.<br/>Just go to the Side Menu Links and "
 					+ "Explore the Advantages.<br/><br/>Thanks For Being Connected with us!" + "</div>");
-
 		} else {
 			RequestDispatcher rd = req.getRequestDispatcher("UserLogin.html");
 			rd.include(req, res);
 
 			pw.println("<div class='tab'><p1 class='menu'>" + responseMsg + "</p1></div>");
-
 		}
-
 	}
-
 }

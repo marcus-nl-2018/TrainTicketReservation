@@ -15,11 +15,10 @@ import com.shashi.beans.TrainException;
 import com.shashi.service.TrainService;
 import com.shashi.service.impl.TrainServiceImpl;
 
-@SuppressWarnings("serial")
 @WebServlet("/updatetrainschedule")
 public class UpdateTrainSchedule extends HttpServlet {
 
-	private TrainService trainService = new TrainServiceImpl();
+	private final TrainService trainService = new TrainServiceImpl();
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		res.setContentType("text/html");

@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.shashi.constant.UserRole;
 import com.shashi.utility.TrainUtil;
 
-@SuppressWarnings("serial")
 @WebServlet("/useravailfwd")
 public class UserAvailFwd extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
@@ -20,7 +19,5 @@ public class UserAvailFwd extends HttpServlet {
 		TrainUtil.validateUserAuthorization(req, UserRole.CUSTOMER);
 		RequestDispatcher rd = req.getRequestDispatcher("Availability.html");
 		rd.forward(req, res);
-
 	}
-
 }
